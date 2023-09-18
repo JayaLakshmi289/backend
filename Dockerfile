@@ -4,7 +4,7 @@ WORKDIR /backend
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production --silent && mv node_modules ../
 COPY . .
-EXPOSE 8081
+EXPOSE 8080
 RUN chown -R node /backend
 USER node
 CMD ["node", "server.js"]

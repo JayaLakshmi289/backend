@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const mysql = require('mysql2');
 
-// configraration with env. 
+// configr  aration with env. 
 dotenv.config();
 module.exports = mysql.createConnection({
 host: process.env.MYSQL_HOST,
